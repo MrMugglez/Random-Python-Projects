@@ -59,7 +59,7 @@ while running:
         player.reduce_mp(spell.cost)
         if spell.type == "black":
             enemy.take_damage(magic_dmg)
-            print(bcolors.OKBLUE + "\n" + spell.name + " deals", str(magic_dmg), "points of damage" + bcolors.ENDC)
+            print(bcolors.OKBLUE + "\n" + spell.name + " deals" + str(magic_dmg), "points of damage" + bcolors.ENDC)
         elif spell.type == "white":
             player.heal(magic_dmg)
             print(bcolors.OKBLUE + "\n" + spell.name + " heals for", str(magic_dmg), "HP." + bcolors.ENDC)
